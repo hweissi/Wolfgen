@@ -3,7 +3,7 @@ import random
 from flask import request
 
 app = flask.Flask(__name__)
-app.config["DEBUG"] = True
+app.config["DEBUG"] = False
 @app.route('/', methods=['GET'])
 def req():
     return app.send_static_file('index.html')
